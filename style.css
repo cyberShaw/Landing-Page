@@ -1,8 +1,21 @@
+html {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
 
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .logo {
@@ -11,6 +24,22 @@
 
 .nav-bar {
     order: 2;
+}
+
+ul {
+    list-style: none;
+}
+
+ol {
+    list-style: none;
+}
+
+@media (max-width:600px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .logo > img {
@@ -31,7 +60,55 @@
     height: 100%;
     text-align: center;
     justify-content: space-evenly;
+}
 
+.icon {
+    color: darkorange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+footer {
+    background-color: #ddd;
+}
+
+footer > ul {
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-end;
+}
+
+span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#pricing {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #hero {
@@ -45,11 +122,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 50px;
 }
 
 @media (max-width: 651px) {
     .nav-bar > ul {
         flex-direction: column;
     }
+}
+
+.product {
+    border: 1.5px solid black;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);    
 }
